@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>html2canvasテスト</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="./html2canvas.min.js"></script>
+    <script src="./script.js"></script>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div>
+        <input id="downloadImageButton" style="width:120px;" type="button" value="画像保存" onclick="getDisplayImage();">
+        <a id="getImage" href="" style="display:none;" download="image.png">画像保存</a>
+    </div>
+    <hr>
+
+    <div id="target" style="height: 3000px;">
+        <img id="work" src="./test.png">
+        <div style="position:absolute;z-index:10;font-size:28px;top:150px;left:250px;background-color:#FFFFFF;">仕事中</div>
+    </div>
+</body>
+
+</html>
